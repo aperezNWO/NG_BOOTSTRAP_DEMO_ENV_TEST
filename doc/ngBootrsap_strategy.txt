@@ -24,29 +24,31 @@
 
               -- [X] https://github.com/aperezNWO/NG_BOOTSTRAP_DEMO_ENV_TEST.git
 
-       -- [_] agregar a github.
+       -- [x] agregar a github.
 
               -- [X] git init
               -- [X] git branch -M main
-              -- [_] git remote add origin https://github.com/aperezNWO/NG_BOOTSTRAP_DEMO_ENV_TEST.git 
-              -- [_] git add *
-              -- [_] git commit -m "FIRST COMMIT"
-              -- [_] git push --set-upstream origin main
-              -- [_] git pull
+              -- [x] git remote add origin https://github.com/aperezNWO/NG_BOOTSTRAP_DEMO_ENV_TEST.git 
+              -- [x] git add *
+              -- [x] git commit -m "FIRST COMMIT"
+              -- [x] git push --set-upstream origin main
+              -- [x] git pull
 
--- [_] DEPLOY AND PUBLISH 
+-- [x] DEPLOY AND PUBLISH 
 
-       -- [_]  packages.json
+       -- [x]  packages.json
 
-               -- [_] "publish": "npx ngh --dir=dist\ng-bootstrap-demo-env-test\browser",
+               -- [x] "publish": "npx ngh --dir=dist\ng-bootstrap-demo-env-test\browser",
 
-               -- [_]  "deploy-and-publish": "ng build --c=production --base-href=\"https://github.com/aperezNWO/NG_BOOTSTRAP_DEMO_ENV_TEST.git/\" && npx ngh --dir=dist\\primeng-quickstart-cli"
+               -- [x]  "deploy-and-publish": "ng build --c=production --base-href=\"https://aperezNWO.github.io/NG_BOOTSTRAP_DEMO_ENV_TEST/\" && npx ngh --dir=dist\\primeng-quickstart-cli"
 
--- [_] PRIME NG
+-- [_] NG BOOTSTRAP
 
        -- [_] install
        
-              -- [_] https://primeng.org/installation
+              -- [_] https://ng-bootstrap.github.io/#
+
+              -- [_] ng add @ng-bootstrap/ng-bootstrap
 
        -- [_] QUCK START
 
