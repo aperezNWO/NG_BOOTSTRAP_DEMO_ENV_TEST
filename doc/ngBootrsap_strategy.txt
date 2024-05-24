@@ -1,0 +1,55 @@
+***********************************************************
+-- NG BOOTRSTRAP STRATEGY
+***********************************************************
+
+-- [_] https://ng-bootstrap.github.io/#/home
+
+***********************************************************
+
+-- [_] Crear aplicativo de ceros
+ 
+       -- [x] npm cache clean --force
+
+       -- [x] ng new NG_BOOTSTRAP_DEMO_ENV_TEST --no-standalone
+
+       -- [x] open folder / cd NG_BOOTSTRAP_DEMO_ENV_TEST
+
+       -- [x] abrir / compilar / ejecyutar proyecto en visual studio code.
+
+              -- [x] npm run build.
+
+              -- [x] npm run start.
+
+       -- [X] crar repositorio github.
+
+              -- [X] https://github.com/aperezNWO/NG_BOOTSTRAP_DEMO_ENV_TEST.git
+
+       -- [_] agregar a github.
+
+              -- [X] git init
+              -- [X] git branch -M main
+              -- [_] git remote add origin https://github.com/aperezNWO/NG_BOOTSTRAP_DEMO_ENV_TEST.git 
+              -- [_] git add *
+              -- [_] git commit -m "FIRST COMMIT"
+              -- [_] git push --set-upstream origin main
+              -- [_] git pull
+
+-- [_] DEPLOY AND PUBLISH 
+
+       -- [_]  packages.json
+
+               -- [_] "publish": "npx ngh --dir=dist\ng-bootstrap-demo-env-test\browser",
+
+               -- [_]  "deploy-and-publish": "ng build --c=production --base-href=\"https://github.com/aperezNWO/NG_BOOTSTRAP_DEMO_ENV_TEST.git/\" && npx ngh --dir=dist\\primeng-quickstart-cli"
+
+-- [_] PRIME NG
+
+       -- [_] install
+       
+              -- [_] https://primeng.org/installation
+
+       -- [_] QUCK START
+
+              -- [_] https://github.com/primefaces/primeng-quickstart-cli
+
+***********************************************************
