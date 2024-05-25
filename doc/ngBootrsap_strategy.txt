@@ -38,9 +38,14 @@
 
        -- [x]  packages.json
 
-               -- [x] "publish": "npx ngh --dir=dist\ng-bootstrap-demo-env-test\browser",
+               -- [x]  "publish": "npx ngh --dir=dist\ng-bootstrap-demo-env-test\browser",
 
                -- [x]  "deploy-and-publish": "ng build --c=production --base-href=\"https://aperezNWO.github.io/NG_BOOTSTRAP_DEMO_ENV_TEST/\" && npx ngh --dir=dist\\primeng-quickstart-cli"
+
+               -- [_]  npm run deploy
+              
+               -- [_]  npm run publish
+
 
 -- [_] NG BOOTSTRAP
 
