@@ -46,10 +46,14 @@
               
                -- [_]  npm run publish
 
+-- [_] install BOOTSTRAP
+
+       -- [_] npm install bootstrap
 
 -- [_] NG BOOTSTRAP
 
-       -- [_] install
+
+       -- [_] install ng-bootstrap
        
               -- [_] https://ng-bootstrap.github.io/#
 

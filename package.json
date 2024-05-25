@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "ng build --c=production --base-href=\"https://aperezNWO.github.io/NG_BOOTSTRAP_DEMO_ENV_TEST/\"",
-    "publish": "npx ngh --dir=dist\\ng-bootstrap-demo-env-test\\browser\\"
+    "publish": "npx ngh --dir=dist\\ng-bootstrap-demo-env-test\\browser\\",
+    "deploy-and-publish" : "ng build --c=production --base-href=\"https://aperezNWO.github.io/NG_BOOTSTRAP_DEMO_ENV_TEST/\" && npx ngh --dir=dist\\ng-bootstrap-demo-env-test\\browser\\ "
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,7 @@
     "@angular/router": "^17.3.0",
     "@ng-bootstrap/ng-bootstrap": "^16.0.0",
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.2",
+    "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

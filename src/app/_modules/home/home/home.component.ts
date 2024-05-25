@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+    //
+    public _appBrand: string = 'ng-bootstrap-demo-env-test';
 }
