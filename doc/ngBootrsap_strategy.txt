@@ -52,7 +52,6 @@
 
 -- [_] NG BOOTSTRAP
 
-
        -- [_] install ng-bootstrap
        
               -- [_] https://ng-bootstrap.github.io/#
@@ -62,5 +61,9 @@
        -- [_] QUCK START
 
               -- [_] https://github.com/primefaces/primeng-quickstart-cli
+
+-- [_] DEV STRATEGY
+
+       -- [_] CONFIG SERVICE.
 
 ***********************************************************
