@@ -1,12 +1,12 @@
-import { Component                         } from '@angular/core';
 import { AsyncPipe, DecimalPipe            } from '@angular/common';
+import { Component                         } from '@angular/core';
 import { QueryList, ViewChildren           } from '@angular/core';
-import { Observable                        } from 'rxjs';
 import { FormsModule                       } from '@angular/forms';
 import { NgbHighlight, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
-import { Country } from '../../../_models/country';
-import { NgbdSortableHeader, SortEvent } from '../../../_services/sortable.directive';
-import { DemoService } from '../../../_services/demo.service';
+import { Observable                        } from 'rxjs';
+import { Country                           } from '../../../_models/country';
+import { NgbdSortableHeader, SortEvent     } from '../../../_services/sortable.directive';
+import { DemoService                       } from '../../../_services/demo.service';
 
 @Component({
   selector: 'app-table-sample',

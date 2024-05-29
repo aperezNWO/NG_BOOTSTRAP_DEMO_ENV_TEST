@@ -5,7 +5,7 @@ import { Country                   } from '../_models/country';
 import { SortColumn, SortDirection } from './sortable.directive';
 import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { debounceTime, delay, switchMap, tap      } from 'rxjs/operators';
-import { COUNTRIES } from '../_models/countries';
+import { COUNTRIES                                } from '../_models/countries';
 
 interface SearchResult {
 	countries: Country[];

@@ -1,11 +1,11 @@
+import { AppRoutingModule                    } from './app-routing.module';
+import { AppComponent                        } from './app.component';
 import { NgModule                            } from '@angular/core';
 import { BrowserModule                       } from '@angular/platform-browser';
 import { AsyncPipe, DecimalPipe              } from '@angular/common';
 import { FormsModule                         } from '@angular/forms';
 import { NgbHighlight, NgbModule             } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
-import { AppRoutingModule        } from './app-routing.module';
-import { AppComponent            } from './app.component';
 import { AlertSampleComponent    } from './_modules/ngbootstrap/alert-sample/alert-sample.component';
 import { TableSampleComponent    } from './_modules/ngbootstrap/table-sample/table-sample.component';
 import { NgbootstrapWebComponent } from './_modules/ngbootstrap/ngbootstrap-web/ngbootstrap-web.component';
