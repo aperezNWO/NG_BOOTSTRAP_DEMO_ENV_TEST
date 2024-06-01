@@ -1,11 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+   --dark-theme-bg: #343a40;
+   --dark-theme-text: #f8f9fa;
+   --dark-theme-accent: #007bff;
+ }
+ 
+ .dark-theme {
+   background-color: var(--dark-theme-bg);
+   color: var(--dark-theme-text);
+ }
+ 
+ .dark-theme .btn-primary {
+   background-color: var(--dark-theme-accent);
+   border-color: var(--dark-theme-accent);
+ }
+ 
 html, 
 body { 
    height: 100%;
    margin: 0; 
    font-family: Roboto, "Helvetica Neue", sans-serif; 
    font-size: x-small;
-   background-color: darkolivegreen;
+   /*background-color: darkolivegreen;*/
+   background-color: var(--dark-theme-bg);
+   color: var(--dark-theme-text);
 }
 
 table {
@@ -69,3 +86,5 @@ a:visited
 {
   color:#ccc;  
 }
+
+
