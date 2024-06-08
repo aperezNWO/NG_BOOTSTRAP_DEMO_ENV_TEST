@@ -31,12 +31,12 @@ import { DemoService             } from './_services/demo.service';
     NgbModule,
     NgbPaginationModule, 
     NgbAlertModule,
+    NgbHighlight, 
+    NgbdSortableHeader, 
+    NgbPaginationModule,
     DecimalPipe, 
     FormsModule, 
     AsyncPipe, 
-    NgbHighlight, 
-    NgbdSortableHeader, 
-    NgbPaginationModule
   ],
   providers: [DemoService, DecimalPipe],
   bootstrap: [AppComponent]

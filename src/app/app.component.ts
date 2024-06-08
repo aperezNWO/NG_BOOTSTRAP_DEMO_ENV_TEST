@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { NavComponent } from './_modules/home/nav/nav.component';
+import { Component     } from '@angular/core';
+import { Router        } from '@angular/router';
+import { Title         } from '@angular/platform-browser';
+import { _ConfigService } from './_services/config.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +11,41 @@ import { NavComponent } from './_modules/home/nav/nav.component';
 
 
 export class AppComponent {
+  //
   title = 'NG_BOOTSTRAP_DEMO_ENV_TEST';
-  
-  
-}
+  // propiedades publicas
+  public readonly _title                                       : string | undefined  = "";
+  public readonly _appBrand                                    : string | undefined  = "";
+  public readonly _appVersion                                  : string | undefined  = "";
+  //
+  private  navbarCollapsed                                     : boolean = true;
+  //
+  public get NavbarCollapsed() : boolean {
+    //
+    return this.navbarCollapsed;
+  }
+  //
+  public set NavbarCollapsed(p_navbarCollapsed: boolean) {
+      //
+      this.navbarCollapsed = p_navbarCollapsed;
+  }
+
+  constructor(
+    private router              : Router, 
+    private _configService      : _ConfigService,
+    private titleService        : Title
+   ) 
+  {
+        this._appBrand          = this._configService.getConfigValue('appBrand');
+        this._appVersion        = this._configService.getConfigValue('appVersion'); //
+        let title : string      = `${this._appBrand} - ${this._appVersion}`;
+        //
+        console.log("Setting Title : " + title);
+        //
+        this._title = `${this._appBrand}`;
+        //
+        this.titleService.setTitle(title);
+        //
+        router.navigateByUrl("/Home");
+  }
+}  
