@@ -4,6 +4,7 @@ import { NgModule                            } from '@angular/core';
 import { BrowserModule                       } from '@angular/platform-browser';
 import { AsyncPipe, DecimalPipe              } from '@angular/common';
 import { FormsModule                         } from '@angular/forms';
+import { HttpClient, HttpClientModule        } from '@angular/common/http';
 import { NgbHighlight, NgbModule             } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertSampleComponent    } from './_modules/ngbootstrap/alert-sample/alert-sample.component';
@@ -14,6 +15,7 @@ import { HomeComponent           } from './_modules/home/home/home.component';
 import { PageNotFoundComponent   } from './_modules/home/page-not-found/page-not-found.component';
 import { NgbdSortableHeader      } from './_services/sortable.directive';
 import { DemoService             } from './_services/demo.service';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { DemoService             } from './_services/demo.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgbModule,
     NgbPaginationModule, 
     NgbAlertModule,
@@ -38,7 +41,7 @@ import { DemoService             } from './_services/demo.service';
     FormsModule, 
     AsyncPipe, 
   ],
-  providers: [DemoService, DecimalPipe],
+  providers: [DemoService, DecimalPipe, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
