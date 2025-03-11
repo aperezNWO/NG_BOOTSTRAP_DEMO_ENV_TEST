@@ -1,16 +1,16 @@
 import { Directive, EventEmitter, Input, Output } from '@angular/core';
 import { Country                                } from '../_models/country';
-
+// 1. 
 export type SortColumn = keyof Country | '';
 export type SortDirection = 'asc' | 'desc' | '';
-
+// 2. 
 const rotate: { [key: string]: SortDirection } = { asc: 'desc', desc: '', '': 'asc' };
-
+// 3. 
 export interface SortEvent {
 	column: SortColumn;
 	direction: SortDirection;
 }
-
+// 4. 
 @Directive({
 	selector: 'th[sortable]',
 	standalone: true,
